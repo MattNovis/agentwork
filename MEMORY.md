@@ -172,18 +172,48 @@ with pd.ExcelWriter('output.xlsx') as writer:
 8. ✅ Updated venv activate script to display `(venv)` prompt instead of `(spreadsheet_env)`
 9. ✅ Updated alias to use `python3` command for reliability
 10. ✅ Tested and verified `aw` alias working correctly in new terminal sessions
+11. ✅ Initialized git repository
+12. ✅ Created .gitignore file
+13. ✅ Installed GitHub CLI (gh) via Homebrew
+14. ✅ Created GitHub repository: https://github.com/MattNovis/agentwork
+15. ✅ Created budget-proposal branch
+16. ✅ Set up budget-proposal project folder with documentation
 
 **Configuration:**
 - Based on existing Operating Budget spreadsheet environment
 - Same package versions for consistency across projects
 - Ready for spreadsheet manipulation and data analysis tasks
 - Alias tested and confirmed working: shows "Python 3.9.6" and "(venv)" prompt
+- Git repository tracking all changes
+- Using branch workflow for project isolation
+
+### Session 2: 2025-11-14
+
+**Tasks Completed:**
+1. ✅ Continued work on budget-proposal branch
+2. ✅ Updated Ideal budget staffing structure (3 mentors + 1 receptionist)
+3. ✅ Modified op-budget-v5.xlsx workbook via Python/openpyxl
+4. ✅ Updated all Excel sheets: Staffing Costs, Operations Schedule, Expense Detail
+5. ✅ Committed and pushed changes to GitHub
+6. ✅ Updated both MEMORY.md files with comprehensive documentation
+
+**Budget Work:**
+- Reduced Ideal budget from $305,180 to $301,854
+- Changed ideal staffing: 3 youth mentors + 1 front desk receptionist (instead of 4 mentors)
+- Maintained 6 total staff for ideal programming
+- All formulas synchronized across sheets
 
 ---
 
 ## Current Status
 
-**Environment State:** ✅ Fully configured, tested, and ready to use
+**Environment State:** ✅ Fully configured and actively in use
+
+**Active Projects:**
+- 📊 **budget-proposal**: Fairbanks after-school club operating budget
+  - Branch: `budget-proposal`
+  - Status: Active development
+  - Latest: Updated Ideal staffing with receptionist position
 
 **Ready for:**
 - Reading/writing Excel files (.xlsx, .xls)
@@ -191,12 +221,15 @@ with pd.ExcelWriter('output.xlsx') as writer:
 - Data analysis with pandas
 - Working with Claude Code on spreadsheet tasks
 - Agent automation workflows
+- Version control with git/GitHub
 
 **Verified Working:**
 - ✅ `aw` alias activates environment correctly
 - ✅ Python 3.9.6 available
 - ✅ Prompt displays `(venv)` when activated
 - ✅ All packages installed and accessible
+- ✅ Git repository synced with GitHub
+- ✅ openpyxl Excel manipulation working
 
 **No Outstanding Issues**
 
@@ -212,17 +245,33 @@ with pd.ExcelWriter('output.xlsx') as writer:
 
 3. **Package Versions:** Matched to Operating Budget environment for consistency
 
-4. **Working Directory:** Environment is located at `/Users/mattnovis/agentwork` (not a git repo)
+4. **Git Repository:**
+   - Location: `/Users/mattnovis/agentwork`
+   - Remote: https://github.com/MattNovis/agentwork
+   - Main branch: `main`
+   - Active branch: `budget-proposal`
+   - Always commit and push changes regularly
+
+5. **Branch Workflow:**
+   - Create feature branches for new projects
+   - Keep main branch clean
+   - Example: `budget-proposal` branch for budget work
 
 ---
 
 ## Next Steps / Future Tasks
 
-**Potential Next Actions:**
-- [ ] Work with spreadsheet files for automation tasks
-- [ ] Create agent scripts for data processing
-- [ ] Add more packages as needed (e.g., matplotlib for plotting, jupyter for notebooks)
-- [ ] Set up git repository if version control is needed
+**Budget Proposal Project:**
+- [ ] Complete revenue projections (City allocation, fees, grants)
+- [ ] Finalize non-personnel expenses (meals, supplies, etc.)
+- [ ] Build cash flow projections
+- [ ] Create scenario analysis
+- [ ] Develop executive summary for City presentation
+
+**Environment Enhancements:**
+- [ ] Add matplotlib if data visualization needed
+- [ ] Add jupyter if notebook analysis needed
+- [ ] Create Python scripts for budget calculations/reporting
 
 ---
 
@@ -278,6 +327,19 @@ which python                   # Check which Python is being used
 python --version               # Check Python version
 pip list                       # List installed packages
 pip install <package>          # Install new package
+```
+
+### Git & GitHub
+```bash
+git status                     # Check repository status
+git branch                     # List branches
+git checkout <branch>          # Switch to branch
+git checkout -b <branch>       # Create and switch to new branch
+git add <file>                 # Stage file for commit
+git commit -m "message"        # Commit staged changes
+git push                       # Push commits to remote
+git pull                       # Pull changes from remote
+gh repo view --web            # Open GitHub repo in browser
 ```
 
 ### File Operations
