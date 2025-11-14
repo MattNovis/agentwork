@@ -45,6 +45,10 @@ wheels/
 .env
 .env.local
 
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
 # Data files (uncomment if you don't want to track data)
 # *.csv
 # *.xlsx
